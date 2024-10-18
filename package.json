@@ -1,0 +1,33 @@
+{
+  "name": "mevbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+    "scripts": {
+    "test": "mocha --timeout 10000",
+    "start": "node src/index.js",
+    "deploy": "node scripts/deploy.js",
+    "interact": "node scripts/interact.js"
+    },
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "async": "^3.2.6",
+    "axios": "^1.7.7",
+    "bignumber.js": "^9.1.2",
+    "dotenv": "^16.4.5",
+    "node-notifier": "^10.0.1",
+    "web3": "^4.13.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "ganache-cli": "^6.12.2",
+    "hardhat": "^2.22.13",
+    "mocha": "^10.7.3"
+  }
+}
