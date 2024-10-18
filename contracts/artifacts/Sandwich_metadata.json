@@ -17,6 +17,25 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "fromAddress",
+						"type": "address"
+					}
+				],
+				"name": "DebugInfo",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -134,11 +153,11 @@
 	},
 	"sources": {
 		"Sandwich.sol": {
-			"keccak256": "0x01eb10439a3a0110b52cfdde38d37b12fbc643fc9369803e27d0d17a1189b034",
+			"keccak256": "0xf833f24d0be3c96f05b530cf2b98a2f0749729c14f06fc4327775b4f9b36fdeb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b46e18d49afa4659272147f13a938be46eb57c922f417819f647fb70d0e5107d",
-				"dweb:/ipfs/QmNmGmmjskNUS14b7mEBJUxdmsVs3pjuEFgfkGW39rKyDx"
+				"bzz-raw://dcd84e85348d8399299dddec173e03a361d11967ef2209ce6c07e9bfc47112b5",
+				"dweb:/ipfs/QmY27yFZYEDG2axb4mGDRqKQ6wSVwhTjeAcs7CafPcTGum"
 			]
 		}
 	},

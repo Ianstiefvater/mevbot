@@ -6,6 +6,80 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -38,6 +112,19 @@
 					}
 				],
 				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -115,7 +202,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Sandwich.sol": "IERC20"
+			"test/erc20-test.sol": "IERC20"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -129,12 +216,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Sandwich.sol": {
-			"keccak256": "0xf833f24d0be3c96f05b530cf2b98a2f0749729c14f06fc4327775b4f9b36fdeb",
+		"test/erc20-test.sol": {
+			"keccak256": "0x5fd64313fd76844795b48c403a871e685ecd8b6909a74627d08631753bd18b5a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dcd84e85348d8399299dddec173e03a361d11967ef2209ce6c07e9bfc47112b5",
-				"dweb:/ipfs/QmY27yFZYEDG2axb4mGDRqKQ6wSVwhTjeAcs7CafPcTGum"
+				"bzz-raw://b1c4c0574a8aaf9bf60c6d1125708043ff0e14ee00fc8992ee369231667074b2",
+				"dweb:/ipfs/QmRGTtmn4UoKYsiSgDDwymL3ttrt2cApfk87Yu7JVTQ3T4"
 			]
 		}
 	},

@@ -14,19 +14,19 @@
 					},
 					{
 						"internalType": "address[]",
-						"name": "path",
+						"name": "",
 						"type": "address[]"
 					}
 				],
 				"name": "getAmountsOut",
 				"outputs": [
 					{
-						"internalType": "uint256[]",
+						"internalType": "uint256[2]",
 						"name": "amounts",
-						"type": "uint256[]"
+						"type": "uint256[2]"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -43,29 +43,29 @@
 					},
 					{
 						"internalType": "address[]",
-						"name": "path",
+						"name": "",
 						"type": "address[]"
 					},
 					{
 						"internalType": "address",
-						"name": "to",
+						"name": "",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "deadline",
+						"name": "",
 						"type": "uint256"
 					}
 				],
 				"name": "swapExactTokensForTokens",
 				"outputs": [
 					{
-						"internalType": "uint256[]",
+						"internalType": "uint256[2]",
 						"name": "amounts",
-						"type": "uint256[]"
+						"type": "uint256[2]"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -82,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Sandwich.sol": "IUniswapV2Router"
+			"test/UniswapRouter-test.sol": "MockUniswapRouter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -96,12 +96,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Sandwich.sol": {
-			"keccak256": "0xf833f24d0be3c96f05b530cf2b98a2f0749729c14f06fc4327775b4f9b36fdeb",
+		"test/UniswapRouter-test.sol": {
+			"keccak256": "0xc808a314c7015c7ff8fc13b85b1734938cbca9c035fcb3a8fe3874f367dd0d4f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dcd84e85348d8399299dddec173e03a361d11967ef2209ce6c07e9bfc47112b5",
-				"dweb:/ipfs/QmY27yFZYEDG2axb4mGDRqKQ6wSVwhTjeAcs7CafPcTGum"
+				"bzz-raw://1d427458b55dd69ed0fb4a00d72ae8d72a9a53f01e0e56332b490416bb699cef",
+				"dweb:/ipfs/QmaxGcbjQR7XguxKyG6RvHmL19vBX3BjRWuKkFXZuydjt8"
 			]
 		}
 	},
