@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Sandwich.sol": "IUniswapV2Router"
+			"Arbitrage.sol": "IDEXRouter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -80,20 +80,20 @@
 				"dweb:/ipfs/QmcYR3bd862GD1Bc7jwrU9bGxrhUu5na1oP964bDCu2id1"
 			]
 		},
+		"Arbitrage.sol": {
+			"keccak256": "0x36f2cd177203d9dc7b41aaa8c9bd4dc690f08a94ca4ebd23349356e2c5583934",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9148a6b63ea05987c297e2d3a69c66d61fd964ea1ce87703372961063dcc8d6e",
+				"dweb:/ipfs/QmWfwY5iY2seqCurrkD41WbsVDctrEdQW8jZACe9o54V8c"
+			]
+		},
 		"IERC20.sol": {
 			"keccak256": "0x03f26317cc1b88c426957a9f21e8eebf7667aeb58019aa38f68813e5e79cebaf",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://3f0106979f8eaa21fcdaaf0e24e876545831b25cf43b41d5628ebb0f8f2e1dec",
 				"dweb:/ipfs/QmTfhAHZna9g9m3t8Uw3ALY8A36CnGxaY4HzNAu332a2Py"
-			]
-		},
-		"Sandwich.sol": {
-			"keccak256": "0x05d031a22e98a268c4b5fd1c6ea1ea8cb1d7524e5d3661e4e378fdfffe35bf58",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://190b95814ff48f145aa74a30eb852c78a991675a3df663475b2fe43851e183b3",
-				"dweb:/ipfs/QmTEuYrSX7ptmmHf3c6bL1nKpGC55d5vAU3LhNsiNGEs2s"
 			]
 		}
 	},

@@ -6,41 +6,66 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "amountIn",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amountOutMin",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address[]",
-						"name": "path",
-						"type": "address[]"
-					},
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "deadline",
-						"type": "uint256"
-					}
-				],
-				"name": "swapExactTokensForTokens",
+				"inputs": [],
+				"name": "getCollateralThreshold",
 				"outputs": [
 					{
-						"internalType": "uint256[]",
-						"name": "amounts",
-						"type": "uint256[]"
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "borrower",
+						"type": "address"
+					}
+				],
+				"name": "getCollateralValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "borrower",
+						"type": "address"
+					}
+				],
+				"name": "getDebt",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "borrower",
+						"type": "address"
+					}
+				],
+				"name": "liquidateBorrower",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -58,7 +83,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Sandwich.sol": "IUniswapV2Router"
+			"Liquidation.sol": "IDeFiPlatform"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -88,12 +113,12 @@
 				"dweb:/ipfs/QmTfhAHZna9g9m3t8Uw3ALY8A36CnGxaY4HzNAu332a2Py"
 			]
 		},
-		"Sandwich.sol": {
-			"keccak256": "0x05d031a22e98a268c4b5fd1c6ea1ea8cb1d7524e5d3661e4e378fdfffe35bf58",
+		"Liquidation.sol": {
+			"keccak256": "0xdcfcf71c18ee1d2768c070c96a0c828a1250605b9ee97e806a8be801dc9e1e91",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://190b95814ff48f145aa74a30eb852c78a991675a3df663475b2fe43851e183b3",
-				"dweb:/ipfs/QmTEuYrSX7ptmmHf3c6bL1nKpGC55d5vAU3LhNsiNGEs2s"
+				"bzz-raw://06377c22ed63dfbb25ea1d4f58c17b11fd187d4490872cb586cd9434c0b5d75f",
+				"dweb:/ipfs/QmTL35831hccvzKdrpJ2zuuyYCtPBi6Zy1aBxtEJiQDe4T"
 			]
 		}
 	},

@@ -1,0 +1,275 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "module",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "allocateFunds",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "moduleFunds",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOutMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "path",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address",
+						"name": "dexAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "arbitrageModule",
+						"type": "address"
+					}
+				],
+				"name": "prepareArbitrage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "borrower",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "platformAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "liquidationModule",
+						"type": "address"
+					}
+				],
+				"name": "prepareLiquidation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOutMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "path",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "sandwichModule",
+						"type": "address"
+					}
+				],
+				"name": "prepareSandwichAttack",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "module",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "profit",
+						"type": "uint256"
+					}
+				],
+				"name": "reportProfit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawFunds",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MasterMEV.sol": "MasterMEV"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/security/ReentrancyGuard.sol": {
+			"keccak256": "0xa535a5df777d44e945dd24aa43a11e44b024140fc340ad0dfe42acf4002aade1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://41319e7f621f2dc3733511332c4fd032f8e32ad2aa7fd6f665c19741d9941a34",
+				"dweb:/ipfs/QmcYR3bd862GD1Bc7jwrU9bGxrhUu5na1oP964bDCu2id1"
+			]
+		},
+		"Arbitrage.sol": {
+			"keccak256": "0x36f2cd177203d9dc7b41aaa8c9bd4dc690f08a94ca4ebd23349356e2c5583934",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9148a6b63ea05987c297e2d3a69c66d61fd964ea1ce87703372961063dcc8d6e",
+				"dweb:/ipfs/QmWfwY5iY2seqCurrkD41WbsVDctrEdQW8jZACe9o54V8c"
+			]
+		},
+		"IERC20.sol": {
+			"keccak256": "0x03f26317cc1b88c426957a9f21e8eebf7667aeb58019aa38f68813e5e79cebaf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3f0106979f8eaa21fcdaaf0e24e876545831b25cf43b41d5628ebb0f8f2e1dec",
+				"dweb:/ipfs/QmTfhAHZna9g9m3t8Uw3ALY8A36CnGxaY4HzNAu332a2Py"
+			]
+		},
+		"Liquidation.sol": {
+			"keccak256": "0xdcfcf71c18ee1d2768c070c96a0c828a1250605b9ee97e806a8be801dc9e1e91",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://06377c22ed63dfbb25ea1d4f58c17b11fd187d4490872cb586cd9434c0b5d75f",
+				"dweb:/ipfs/QmTL35831hccvzKdrpJ2zuuyYCtPBi6Zy1aBxtEJiQDe4T"
+			]
+		},
+		"MasterMEV.sol": {
+			"keccak256": "0x76b8b59190f9d9655113e8c0c65ff7ba984554bc22523f09538d95f253b216c6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0afb8ee2a6e6234d83717134856c23feb67b6169a1b9d1d298f8fc72803a0c38",
+				"dweb:/ipfs/QmeCEUCusw7YhDgmq8gxZ2rJ7fHGnE8FYhunyJZmbxk9Ep"
+			]
+		},
+		"Sandwich.sol": {
+			"keccak256": "0x05d031a22e98a268c4b5fd1c6ea1ea8cb1d7524e5d3661e4e378fdfffe35bf58",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://190b95814ff48f145aa74a30eb852c78a991675a3df663475b2fe43851e183b3",
+				"dweb:/ipfs/QmTEuYrSX7ptmmHf3c6bL1nKpGC55d5vAU3LhNsiNGEs2s"
+			]
+		}
+	},
+	"version": 1
+}

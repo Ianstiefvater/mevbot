@@ -115,7 +115,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Sandwich.sol": "IERC20"
+			"IERC20.sol": "IERC20"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -129,12 +129,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Sandwich.sol": {
-			"keccak256": "0xf833f24d0be3c96f05b530cf2b98a2f0749729c14f06fc4327775b4f9b36fdeb",
+		"IERC20.sol": {
+			"keccak256": "0x03f26317cc1b88c426957a9f21e8eebf7667aeb58019aa38f68813e5e79cebaf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dcd84e85348d8399299dddec173e03a361d11967ef2209ce6c07e9bfc47112b5",
-				"dweb:/ipfs/QmY27yFZYEDG2axb4mGDRqKQ6wSVwhTjeAcs7CafPcTGum"
+				"bzz-raw://3f0106979f8eaa21fcdaaf0e24e876545831b25cf43b41d5628ebb0f8f2e1dec",
+				"dweb:/ipfs/QmTfhAHZna9g9m3t8Uw3ALY8A36CnGxaY4HzNAu332a2Py"
 			]
 		}
 	},
