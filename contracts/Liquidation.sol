@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import "./IERC20.sol";
 
 interface IDeFiPlatform {
@@ -16,11 +16,9 @@ interface IDeFiPlatform {
 contract Liquidation is ReentrancyGuard {
     address public immutable owner;
     mapping(address => IDeFiPlatform) public platforms;  // Mapping of platform addresses to their interfaces
-    address public tokenAddress; // Address of ERC20 token used in liquidations
 
-    constructor(address _tokenAddress) {
+    constructor() {
         owner = msg.sender;
-        tokenAddress = _tokenAddress;
     }
 
     modifier onlyOwner() {
@@ -33,7 +31,7 @@ contract Liquidation is ReentrancyGuard {
     }
 
     // Setup and execute a liquidation
-    function setupLiquidation(address borrower, address platformAddress) external onlyOwner nonReentrant {
+    function setupLiquidation(address borrower, address platformAddress, address tokenAddress) external onlyOwner nonReentrant {
         IDeFiPlatform platform = platforms[platformAddress];
         require(address(platform) != address(0), "Platform not set");
 
